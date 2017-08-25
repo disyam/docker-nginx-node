@@ -4,5 +4,5 @@ MAINTAINER disyam.adityana@gmail.com
 
 RUN apt-get update && \
     apt-get install -y curl git && \
-    curl --silent --location https://rpm.nodesource.com/setup_8.x | bash - && \
+    curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && \
     apt-get install -y nodejs
